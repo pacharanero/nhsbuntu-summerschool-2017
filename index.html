@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>NHSbuntu</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/nhsbuntu.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<!-- title-slide -->
+				<section>
+					<img src="img/nhsbuntu_logo_white.svg.png" alt="NHSbuntu">
+					<h4>An operating system for the NHS</h4>
+				</section>
+
+				<!-- marcus-bio -->
+				<section>
+					<img src="img/marcus.jpg" width="200" alt="marcus.jpg">
+					<h3><a href="https://twitter.com/marcus_baw">@marcus_baw</a></h3>
+					<ul>
+						<h4>GP &amp; Emergency Physician</h4>
+						<h4>Clinical informatician / ‘General Hacktitioner’</h4>
+						<h4><small>NHS.UK Alpha, RCGP HIG, Endeavour Health, Apperta Foundation, Eyedraw/OpenEyes, Professional Records Standards Body, NHS Healthy Child Programme, NHS WiFi Programme, NHS Hack Day, CCIO Network, UKHealthCamp, Clinical Software Usability Survey 2015-2016...</small></h4>
+						<h4><a href="http://pacharanero.github.io/opensourceistheonlyway/#/">‘Open Source is the Only Way For Medicine’</a></h4>
+					</ul>
+				</section>
+
+				<section>
+					<h2>YOU HAVE A PROBLEM</h2>
+					<img src="/img/Windows_7_logo.png">
+				</section>
+
+				<section class="win7-EOL-there-is-no-plan">
+						<span class="fragment fade-in">
+							<p>Windows 7 End Of Support: January 14th 2020</p>
+							<p>New hardware will not work with older Windows versions</p>
+							<p>Old hardware may not perform well with Win 10</p>
+							<p>Clinical apps may not work with Win10 or Edge</p>
+						</span>
+						<span class="fragment fade-in">
+							<p>1) You have to migrate to Win10 before 2020</p>
+							<p>2) You have to replace all legacy clinical apps before 2020, to do 1)</p>
+							<p>3) You need to upgrade all your hardware in order to do 2)</p>
+							<p><strong>You can’t afford to do 1), 2), and 3) at the same time (cash/staff/training)</strong></p>
+						</span>
+						<span class="fragment fade-in">
+							<h2>There Is No Plan</h2>
+						</span>
+				</section>
+
+				<section>
+					<p class="fragment fade-in">£700 to license a new machine</p>
+					<p class="fragment fade-in">1300 machines / organisation</p>
+					<p class="fragment fade-in">5 year lifetime of applications</p>
+					<p class="fragment fade-in">>500 'major' sized organisations in NHS (CCG + Acutes + MH)</p>
+					<h2 class="fragment fade-in">£455m</h2>
+					<small><p class="fragment fade-in">source: best guessing, CIO interviews, and <a href="http://www.nhsconfed.org/resources/key-statistics-on-the-nhs"></a>http://www.nhsconfed.org/resources/key-statistics-on-the-nhs</p></small>
+				</section>
+
+				<section>
+					<h1 class="fragment grow" style="font-size: 10em">£455m</h2>
+				</section>
+
+				<section>
+					<p class="fragment fade-in">legacy clinical apps with pre-Win10 dependencies</p>
+					<p class="fragment fade-in">no resources to migrate off those legacy clinical apps</p>
+					<p class="fragment fade-in">increasing security risk from these older dependencies</p>
+				</section>
+
+				<section>
+					<h2>it leaks patient data?</h2>
+					<p class="fragment fade-in">Windows 10 sends data to Microsoft in over 30 ways (incl raw keystrokes)</p>
+					<p class="fragment fade-in">This can be over-ridden in your org - but it is extra work, and not easy</p>
+					<p class="fragment fade-in">Third party / home PCs accessing NHSMail, VPNing into trust systems are beyond organisational controls, and may leak data, so as we develop wider data sharing, it will be impossible to prevent keystrokes being sent to Redmond, WA, USA.</p>
+					<br>
+					<p class="fragment fade-in">We may not be able to stop privacy-critical PID keystroke data being sent to Microsoft via Windows 10 PCs</p>
+					<h3 class="fragment fade-in">We need to think hard about whether Windows 10 is fit for the NHS.</p>
+				</section>
+
+				<section>
+					<h1>There Is No Plan</h1>
+				</section>
+				
+				<section>
+					<h2>What is NHSbuntu?</h2>
+					<br/>
+					<p>NHSbuntu takes <strong>plain Ubuntu</strong> and optimises it for the NHS</p>
+					<p><strong>unofficial:</strong> not directly affiliated to NHS or Canonical organisations</p>
+					<p><strong>removes</strong> packages the NHS doesn’t need</p>
+					<p><strong>adds</strong> packages the NHS needs, <strong>develops</strong> custom elements</p>
+					<p><strong>adds familiarity</strong> by configuring look &amp; feel, branding etc</p>
+					<p><strong>provides services</strong> around NHSbuntu - customisations, Disaster-recovery Live USB version, custom development.</p>
+				</section>
+					
+				<section>
+					<h2>What is Ubuntu?</h2>
+					<br/>
+					<p>Ubuntu is ‘Linux for Human Beings’</p>
+					<p>A more friendly wrapper around Linux</p>
+					<p>Backed by Canonical, who provide support services</p>
+					<p>The most popular Linux variant, with millions of deployments worldwide</p>
+					<p>We have taken Ubuntu and pre-configured it to work with the NHS’s most common needs and requirements.</p>
+				</section>
+	
+				<section>
+					<h2>What is Linux?</h2>
+					<br/>
+					<p>A free, open source UNIX based operating system</p>
+					<p>Released 1991 by Linus Torvalds, Finnish Computer Science student</p>
+					<p>Now running on 96.6% of the world’s top 1 million websites</p>
+					<p>It’s the operating system inside Android devices and Chromebook laptops</p>
+					<p>It’s used by the giants of the web including Amazon, Facebook and Google</p>
+					<p>Apple, Oracle, and IBM all use free UNIX variants</p>
+				</section>
+
+				<section>
+					<h2>~80% of NHS desktops are for backoffice/admin</h2>
+					<br/>
+					<p class="fragment fade-in">(discuss)</p>
+				</section>
+
+				<section>
+					<p class="fragment fade-in">Libre Office suite</p>
+					<p class="fragment fade-in">NHSmail2 Email</p>
+					<p class="fragment fade-in">Modern browsers Firefox &amp; Chromium/Chrome</p>
+					<p class="fragment fade-in">Windows ‘shared drive’ (eek)</p>
+					<p class="fragment fade-in">Network printers</p>
+					<p class="fragment fade-in">Scanner app / drivers</p>
+					<p class="fragment fade-in">Active Directory Support</p>
+				</section>
+
+
+				<section>
+					<h2>20% of NHS desktops are used for direct clinical work</h2>
+				</section>
+
+				<section>
+					<p class="fragment fade-in">PAS (Patient Administration Systems)</p>
+					<p class="fragment fade-in">EPR (Electronic Patient Record)</p>
+					<p class="fragment fade-in">GP Clinical Systems</p>
+					<p class="fragment fade-in">Clinical portals</p>
+					<p class="fragment fade-in">NHS National Services on Spine:</p>
+					<p class="fragment fade-in">Summary Care Record</p>
+					<p class="fragment fade-in">e-Referral Service</p>
+					<p class="fragment fade-in">Patient Demographic Services</p>
+				</section>
+
+				<section>
+					<h3>Often heavily coupled to Windows ecosystem</h3>
+					<h3>More difficult to <strong>Linuxify</strong></h3>
+					<h3>Hard dependencies on:</h3>
+					<h3 class="fragment fade-in">Internet Explorer</h3>
+					<h3 class="fragment fade-in">Microsoft Word</h3>
+					<h3 class="fragment fade-in">Microsoft OneNote even!</h3>
+				</section>
+
+				<section>
+					<h3 class="current-work">
+						<h2>What are the team working on right now</h2>
+						<p>Native Linux Identity Agent (for NHS Spine Smart cards)</p>
+						<p>Automated build chain tooling so we can programmatically make changes to image definition files and have the ISOs build and test automatically.</p>
+						<p>Exploration of the ‘NHSbuntu for Disaster Recovery’ use-case</p>
+						<p>Performance testing of LiveUSB version on fast USBdrives/USB SSD</p>
+						<p>Discovery work regarding different desktop environments - we’re thinking of switching to Cinnamon DE (from Gnome3 DE)</p>
+					</h3>
+				</section>
+
+				<section class="get-involved">	
+					<h3>getting involved</h3>
+					<p class="fragment fade-in"><strong>download the ISO, install and play!</strong></p>
+					<p class="fragment fade-in">read more here: <a href="https://www.nhsbuntu.org">www.nhsbuntu.org</a></p>
+					<p class="fragment fade-in">join our <a href="https://join-nhsbuntu-slack-team.now.sh/">Slack team</a></p>
+					<p class="fragment fade-in">tell people about NHSbuntu</p>
+					<p class="fragment fade-in">Follow us on Twitter <a href="https://twitter.com.nhsbuntu">@nhsbuntu</a></p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
